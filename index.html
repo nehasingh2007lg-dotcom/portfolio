@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neha - Computer Science Student & Developer Portfolio">
+    <title>Neha | Software Developer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Interactive Cursor Follower -->
+    <div class="cursor-glow"></div>
+
+    <!-- Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content container">
+            <a href="#" class="logo">Neha<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <div class="close-menu"><i class="fas fa-times"></i></div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-text reveal-left">
+                <p class="greeting">Hi, I'm</p>
+                <h1 class="name">Neha</h1>
+
+                <h3 class="tagline">Dream • Design • Develop<span class="cursor">|</span></h3>
+                <p class="bio">
+                    Passionate Computer Science student blending modern web development with a keen interest in
+                    cybersecurity. An adaptable problem-solver actively seeking internships to engineer secure,
+                    impactful real-world solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="cv.pdf" target="_blank" class="btn btn-secondary">View CV</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/neha-01a94737b" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/nehasingh2007lg-dotcom/Neha" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:nehasingh2007lg@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-image reveal-right">
+                <div class="profile-img-container">
+                    <img src="profile.png" alt="Neha - Profile Photo" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title reveal-up">My <span class="gradient-text">Skills</span></h2>
+
+            <div class="skills-grid">
+                <div class="skill-card glass reveal-up" style="--delay: 1">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Languages</h3>
+                    <p>C++, C, Python, JavaScript, SQL</p>
+                </div>
+                <div class="skill-card glass reveal-up" style="--delay: 2">
+                    <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Frameworks & Libraries</h3>
+                    <p>HTML, CSS, Pandas, NumPy</p>
+                </div>
+                <div class="skill-card glass reveal-up" style="--delay: 3">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>Databases</h3>
+                    <p>MySQL, MongoDB</p>
+                </div>
+                <div class="skill-card glass reveal-up" style="--delay: 4">
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud & DevOps</h3>
+                    <p>Git, GitHub, Docker</p>
+                </div>
+                <div class="skill-card glass reveal-up" style="--delay: 5">
+                    <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Core Subjects</h3>
+                    <p>Data Structures & Algorithms, DBMS, OS, Computer Networks, OOP</p>
+                </div>
+                <div class="skill-card glass reveal-up" style="--delay: 6">
+                    <div class="skill-icon"><i class="fas fa-users"></i></div>
+                    <h3>Soft Skills</h3>
+                    <p>Problem Solving, Communication, Teamwork, Adaptability, Leadership</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title reveal-up">Featured <span class="gradient-text">Projects</span></h2>
+
+            <div class="project-container">
+                <!-- Project 1 -->
+                <div class="project-card glass reveal-left">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-date">Feb 2026</span>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://autohelper-ai.netlify.app" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 style="cursor: pointer;"
+                            onclick="window.open('https://autohelper-ai.netlify.app', '_blank')">AutoHelper AI</h3>
+                        <p class="project-role">AI-Powered Assistance Platform</p>
+                        <ul class="project-features">
+                            <li>Developed an AI-based web application to provide automated assistance and improve user
+                                interaction.</li>
+                            <li>Designed a user-friendly interface and implemented intelligent features to deliver quick
+                                and efficient solutions.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>AI Tech</span>
+                            <span>Web Dev</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass reveal-right">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-date">Sep 2025</span>
+                            <div class="project-links">
+                                <a href="https://github.com/chn1004/Time_capsule" target="_blank"
+                                    rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 style="cursor: pointer;"
+                            onclick="window.open('https://github.com/chn1004/Time_capsule', '_blank')">Time Capsule</h3>
+                        <p class="project-role">Retro-themed web application</p>
+                        <ul class="project-features">
+                            <li>Developed a retro-themed web application that allows users to create and share anonymous
+                                letters with image and video attachments.</li>
+                            <li>Implemented random letter discovery, file previews, and upload progress tracking for an
+                                interactive user experience.</li>
+                            <li>Built using Python (Flask), Firebase Firestore, Firebase Storage, HTML, CSS, and
+                                JavaScript.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Python (Flask)</span>
+                            <span>Firebase</span>
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <h2 class="section-title reveal-up"><span class="gradient-text">Education</span> & Training</h2>
+
+            <div class="education-grid">
+                <div class="timeline reveal-up">
+                    <h3 class="subsection-title"><i class="fas fa-graduation-cap"></i> Academics</h3>
+
+                    <div class="timeline-item glass">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">August 2025 – June 2026</span>
+                            <h4>Lovely Professional University</h4>
+                            <h5>Phagwara, Punjab</h5>
+                            <p>Bachelor of Technology – Computer Science and Engineering</p>
+                            <span class="highlight">CGPA: 8.12</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item glass">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023 – 2024</span>
+                            <h4>Sahaj Public School</h4>
+                            <h5>Khatauli, Uttar Pradesh</h5>
+                            <p>Senior Secondary (Class XII)</p>
+                            <span class="highlight">Percentage: 80.2%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline reveal-up" style="--delay: 2">
+                    <h3 class="subsection-title"><i class="fas fa-certificate"></i> Training & Certifications</h3>
+
+                    <div class="timeline-item glass">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Jun 2026 – Jul 2026</span>
+                            <h4>Python Programming Training</h4>
+                            <p>Strengthened Python fundamentals including data structures, algorithms, and file
+                                handling. Practiced problem-solving and debugging.</p>
+                            <div class="tech-stack small">
+                                <span>Python</span>
+                                <span>VS Code</span>
+                                <span>Jupyter</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item glass">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Other Certifications</h4>
+                            <ul class="cert-list">
+                                <li><strong>CS105: Introduction to Python</strong> - LPU / Course Provider <em>(Feb
+                                        2026)</em></li>
+                                <li><strong>Basics of Python - 30 hours</strong> - Infosys Springboard <em>(June
+                                        2026)</em></li>
+                                <li><strong>Effective Time Management</strong> - Tech Veda MOOC <em>(Oct 2025)</em></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements & Extracurriculars -->
+    <section id="achievements" class="achievements section">
+        <div class="container">
+            <h2 class="section-title reveal-up">Achievements & <span class="gradient-text">Activities</span></h2>
+
+            <div class="cards-grid">
+                <div class="achievement-column reveal-left">
+                    <h3 class="subsection-title"><i class="fas fa-trophy"></i> Achievements</h3>
+
+                    <div class="achievement-card glass">
+                        <div class="ach-icon"><i class="fas fa-star"></i></div>
+                        <div class="ach-text">
+                            <h4>TechXpo Hackathon (SCC)</h4>
+                            <p>Participated in 1st Semester and secured <strong>5th position</strong> among 50+
+                                competing teams.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card glass">
+                        <div class="ach-icon"><i class="fas fa-code"></i></div>
+                        <div class="ach-text">
+                            <h4>1st Position in Coding Competition</h4>
+                            <p>Acquired <strong>1st position</strong> in the coding competition held in school. <em>(Sep
+                                    2025)</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-column reveal-right">
+                    <h3 class="subsection-title"><i class="fas fa-running"></i> Extracurriculars</h3>
+
+                    <div class="achievement-card glass">
+                        <div class="ach-icon"><i class="fas fa-medal"></i></div>
+                        <div class="ach-text">
+                            <h4>1st Position - 800m Race</h4>
+                            <p>Acquired <strong>1st position</strong> in 800-meter race. <em>(Aug 2021)</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="contact-box glass reveal-up">
+                <h2>Get In Touch</h2>
+                <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your
+                    visions.</p>
+
+                <div class="contact-details">
+                    <a href="mailto:nehasingh2007lg@gmail.com" class="contact-item">
+                        <div class="c-icon"><i class="fas fa-envelope"></i></div>
+                        <span>nehasingh2007lg@gmail.com</span>
+                    </a>
+                    <a href="tel:+916397646597" class="contact-item">
+                        <div class="c-icon"><i class="fas fa-phone"></i></div>
+                        <span>+91 6397646597</span>
+                    </a>
+                </div>
+
+                <div class="social-links large">
+                    <a href="https://www.linkedin.com/in/neha-01a94737b" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/nehasingh2007lg-dotcom/Neha" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
