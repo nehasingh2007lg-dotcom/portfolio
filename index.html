@@ -33,10 +33,11 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#skills-graph">Skills Graph</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="nav-highlight">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
@@ -50,10 +51,11 @@
         <ul class="mobile-nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#skills-graph">Skills Graph</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" class="nav-highlight">Contact</a></li>
         </ul>
     </div>
 
@@ -61,13 +63,13 @@
     <section id="home" class="hero">
         <div class="container hero-container">
             <div class="hero-text reveal-left">
-                <p class="greeting">Hi, I'm</p>
-                <h1 class="name">Neha</h1>
+                <p class="greeting headline-highlight">Hi, I'm</p>
+                <h1 class="name headline-highlight">Neha</h1>
 
-                <h3 class="tagline">Dream • Design • Develop<span class="cursor">|</span></h3>
+                <h3 class="tagline headline-highlight">Dream • Design • Develop<span class="cursor">|</span></h3>
                 <p class="bio">
                     Passionate Computer Science student blending modern web development with a keen interest in
-                   Artificial Intelligence. An adaptable problem-solver actively seeking internships to engineer secure,
+                    cybersecurity. An adaptable problem-solver actively seeking internships to engineer secure,
                     impactful real-world solutions.
                 </p>
                 <div class="hero-buttons">
@@ -79,7 +81,8 @@
                         aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/nehasingh2007lg-dotcom/Neha" target="_blank" rel="noopener noreferrer"
                         aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="mailto:nehasingh2007lg@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="mailto:nehasingh2007lg@gmail.com" class="email-highlight" aria-label="Email"><i
+                            class="fas fa-envelope"></i></a>
                 </div>
             </div>
 
@@ -94,7 +97,7 @@
     <!-- Skills Section -->
     <section id="skills" class="skills section">
         <div class="container">
-            <h2 class="section-title reveal-up">My <span class="gradient-text">Skills</span></h2>
+            <h2 class="section-title reveal-up heading-highlight">My <span class="gradient-text">Skills</span></h2>
 
             <div class="skills-grid">
                 <div class="skill-card glass reveal-up" style="--delay: 1">
@@ -131,14 +134,110 @@
         </div>
     </section>
 
+    <!-- Skills Graph Section -->
+    <section id="skills-graph" class="skills-graph section">
+        <div class="container">
+            <h2 class="section-title reveal-up">Skills <span class="gradient-text">Graph</span></h2>
+            <p class="graph-subtitle reveal-up">
+                A visual overview of the skills currently listed in my portfolio.
+            </p>
+
+            <div class="skills-graph-card glass reveal-up">
+                <!-- SVG Gradient Definition -->
+                <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+                    <defs>
+                        <linearGradient id="skill-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="var(--accent-1)" />
+                            <stop offset="100%" stop-color="var(--accent-3)" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+
+                <div class="pie-chart-layout reveal-up">
+                    <div class="pie-chart-wrapper">
+                        <svg viewBox="0 0 100 100" class="unified-pie">
+                            <circle cx="50" cy="50" r="40" class="pie-base"></circle>
+                            <circle cx="50" cy="50" r="40" class="pie-segment segment-1"></circle>
+                            <circle cx="50" cy="50" r="40" class="pie-segment segment-2"></circle>
+                            <circle cx="50" cy="50" r="40" class="pie-segment segment-3"></circle>
+                            <circle cx="50" cy="50" r="40" class="pie-segment segment-4"></circle>
+                            <circle cx="50" cy="50" r="40" class="pie-segment segment-5"></circle>
+                            <circle cx="50" cy="50" r="40" class="pie-segment segment-6"></circle>
+                        </svg>
+                        <div class="pie-center-content">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                    </div>
+
+                    <div class="pie-legend">
+                        <div class="legend-item hover-translate" style="--dot-color: #9333ea;">
+                            <div class="legend-info">
+                                <div class="legend-dot"></div>
+                                <span class="legend-name">Languages</span>
+                            </div>
+                            <span class="legend-pct">70%</span>
+                        </div>
+                        <div class="legend-item hover-translate" style="--dot-color: #2563eb;">
+                            <div class="legend-info">
+                                <div class="legend-dot"></div>
+                                <span class="legend-name">Core Subjects</span>
+                            </div>
+                            <span class="legend-pct">80%</span>
+                        </div>
+                        <div class="legend-item hover-translate" style="--dot-color: #db2777;">
+                            <div class="legend-info">
+                                <div class="legend-dot"></div>
+                                <span class="legend-name">Soft Skills</span>
+                            </div>
+                            <span class="legend-pct">85%</span>
+                        </div>
+                        <div class="legend-item hover-translate" style="--dot-color: #0ea5e9;">
+                            <div class="legend-info">
+                                <div class="legend-dot"></div>
+                                <span class="legend-name">Frameworks & Libraries</span>
+                            </div>
+                            <span class="legend-pct">80%</span>
+                        </div>
+                        <div class="legend-item hover-translate" style="--dot-color: #10b981;">
+                            <div class="legend-info">
+                                <div class="legend-dot"></div>
+                                <span class="legend-name">Cloud & DevOps</span>
+                            </div>
+                            <span class="legend-pct">60%</span>
+                        </div>
+                        <div class="legend-item hover-translate" style="--dot-color: #f59e0b;">
+                            <div class="legend-info">
+                                <div class="legend-dot"></div>
+                                <span class="legend-name">Databases</span>
+                            </div>
+                            <span class="legend-pct">65%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="graph-note">
+                    <i class="fas fa-chart-column"></i>
+                    <span>Percentages represent the proficiency level in each category above.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="projects section">
         <div class="container">
-            <h2 class="section-title reveal-up">Featured <span class="gradient-text">Projects</span></h2>
+            <h2 class="section-title reveal-up heading-highlight">Featured <span class="gradient-text">Projects</span>
+            </h2>
 
             <div class="project-container">
                 <!-- Project 1 -->
                 <div class="project-card glass reveal-left">
+                    <div class="project-image">
+                        <img src="autohelper.png" alt="AutoHelper AI Project" loading="lazy">
+                        <div class="project-image-overlay">
+                            <span>Featured Project</span>
+                        </div>
+                    </div>
                     <div class="project-content">
                         <div class="project-header">
                             <span class="project-date">Feb 2026</span>
@@ -148,7 +247,7 @@
                                     aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
-                        <h3 style="cursor: pointer;"
+                        <h3 class="content-highlight" style="cursor: pointer;"
                             onclick="window.open('https://autohelper-ai.netlify.app', '_blank')">AutoHelper AI</h3>
                         <p class="project-role">AI-Powered Assistance Platform</p>
                         <ul class="project-features">
@@ -167,6 +266,12 @@
 
                 <!-- Project 2 -->
                 <div class="project-card glass reveal-right">
+                    <div class="project-image">
+                        <img src="time-capsule.png" alt="Time Capsule Project" loading="lazy">
+                        <div class="project-image-overlay">
+                            <span>Featured Project</span>
+                        </div>
+                    </div>
                     <div class="project-content">
                         <div class="project-header">
                             <span class="project-date">Sep 2025</span>
@@ -176,7 +281,7 @@
                                 <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
-                        <h3 style="cursor: pointer;"
+                        <h3 class="content-highlight" style="cursor: pointer;"
                             onclick="window.open('https://github.com/chn1004/Time_capsule', '_blank')">Time Capsule</h3>
                         <p class="project-role">Retro-themed web application</p>
                         <ul class="project-features">
@@ -202,7 +307,8 @@
     <!-- Education Section -->
     <section id="education" class="education section">
         <div class="container">
-            <h2 class="section-title reveal-up"><span class="gradient-text">Education</span> & Training</h2>
+            <h2 class="section-title reveal-up heading-highlight"><span class="gradient-text">Education</span> &
+                Training</h2>
 
             <div class="education-grid">
                 <div class="timeline reveal-up">
@@ -212,7 +318,7 @@
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <span class="timeline-date">August 2025 – June 2026</span>
-                            <h4>Lovely Professional University</h4>
+                            <h4 class="content-highlight">Lovely Professional University</h4>
                             <h5>Phagwara, Punjab</h5>
                             <p>Bachelor of Technology – Computer Science and Engineering</p>
                             <span class="highlight">CGPA: 8.12</span>
@@ -223,10 +329,21 @@
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <span class="timeline-date">2023 – 2024</span>
-                            <h4>Sahaj Public School</h4>
+                            <h4 class="content-highlight">Sahaj Public School</h4>
                             <h5>Khatauli, Uttar Pradesh</h5>
                             <p>Senior Secondary (Class XII)</p>
                             <span class="highlight">Percentage: 80.2%</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item glass">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2021 – 2022</span>
+                            <h4 class="content-highlight">KK Public school</h4>
+                            <h5>Khatauli, Uttar Pradesh</h5>
+                            <p>Secondary (Class X)</p>
+                            <span class="highlight">Percentage: 85.2%</span>
                         </div>
                     </div>
                 </div>
@@ -238,7 +355,8 @@
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <span class="timeline-date">Jun 2026 – Jul 2026</span>
-                            <h4>Python Programming Training</h4>
+                            <h4 class="content-highlight" style="cursor: pointer;"
+                                onclick="window.open('CDP.jpeg', '_blank')">Python Programming Training</h4>
                             <p>Strengthened Python fundamentals including data structures, algorithms, and file
                                 handling. Practiced problem-solving and debugging.</p>
                             <div class="tech-stack small">
@@ -254,9 +372,13 @@
                         <div class="timeline-content">
                             <h4>Other Certifications</h4>
                             <ul class="cert-list">
-                                <li><strong>CS105: Introduction to Python</strong> - LPU / Course Provider <em>(Feb
+                                <li style="cursor: pointer;" onclick="window.open('python.jpeg', '_blank')"><strong
+                                        class="content-highlight">CS105: Introduction to Python</strong> - LPU / Course
+                                    Provider <em>(Feb
                                         2026)</em></li>
-                                <li><strong>Basics of Python - 30 hours</strong> - Infosys Springboard <em>(June
+                                <li style="cursor: pointer;" onclick="window.open('python.jpeg', '_blank')"><strong
+                                        class="content-highlight">Basics of Python - 30 hours</strong> - Infosys
+                                    Springboard <em>(June
                                         2026)</em></li>
                                 <li><strong>Effective Time Management</strong> - Tech Veda MOOC <em>(Oct 2025)</em></li>
                             </ul>
@@ -270,7 +392,8 @@
     <!-- Achievements & Extracurriculars -->
     <section id="achievements" class="achievements section">
         <div class="container">
-            <h2 class="section-title reveal-up">Achievements & <span class="gradient-text">Activities</span></h2>
+            <h2 class="section-title reveal-up heading-highlight">Achievements & <span
+                    class="gradient-text">Activities</span></h2>
 
             <div class="cards-grid">
                 <div class="achievement-column reveal-left">
@@ -279,7 +402,7 @@
                     <div class="achievement-card glass">
                         <div class="ach-icon"><i class="fas fa-star"></i></div>
                         <div class="ach-text">
-                            <h4>TechXpo Hackathon (SCC)</h4>
+                            <h4 class="content-highlight">TechXpo Hackathon (SCC)</h4>
                             <p>Participated in 1st Semester and secured <strong>5th position</strong> among 50+
                                 competing teams.</p>
                         </div>
@@ -288,7 +411,7 @@
                     <div class="achievement-card glass">
                         <div class="ach-icon"><i class="fas fa-code"></i></div>
                         <div class="ach-text">
-                            <h4>1st Position in Coding Competition</h4>
+                            <h4 class="content-highlight">1st Position in Coding Competition</h4>
                             <p>Acquired <strong>1st position</strong> in the coding competition held in school. <em>(Sep
                                     2025)</em></p>
                         </div>
@@ -301,7 +424,7 @@
                     <div class="achievement-card glass">
                         <div class="ach-icon"><i class="fas fa-medal"></i></div>
                         <div class="ach-text">
-                            <h4>1st Position - 800m Race</h4>
+                            <h4 class="content-highlight">1st Position - 800m Race</h4>
                             <p>Acquired <strong>1st position</strong> in 800-meter race. <em>(Aug 2021)</em></p>
                         </div>
                     </div>
@@ -311,21 +434,21 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <section id="contact" class="contact section contact-highlight-section">
         <div class="container">
-            <div class="contact-box glass reveal-up">
-                <h2>Get In Touch</h2>
+            <div class="contact-box glass reveal-up contact-highlight-box">
+                <h2 class="contact-heading">Get In Touch</h2>
                 <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your
                     visions.</p>
 
                 <div class="contact-details">
                     <a href="mailto:nehasingh2007lg@gmail.com" class="contact-item">
                         <div class="c-icon"><i class="fas fa-envelope"></i></div>
-                        <span>nehasingh2007lg@gmail.com</span>
+                        <span class="email-text">nehasingh2007lg@gmail.com</span>
                     </a>
                     <a href="tel:+916397646597" class="contact-item">
                         <div class="c-icon"><i class="fas fa-phone"></i></div>
-                        <span>+91 6397646597</span>
+                        <span class="phone-text">+91 6397646597</span>
                     </a>
                 </div>
 
@@ -339,7 +462,13 @@
         </div>
     </section>
 
-
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer-container"
+            style="display: flex; justify-content: center; align-items: center; text-align: center; padding: 1.5rem 0;">
+            <p style="margin: 0; color: var(--text-muted);">&copy; 2026 Neha. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
